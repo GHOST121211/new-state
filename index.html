@@ -1,0 +1,475 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW STATE RP</title>
+    
+   <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+        <h2>🎉 مرحبًا بك في NEW STATE RP!</h2>
+        <p>استمتع بتجربة رائعة ومثيرة في السيرفر.</p>
+        <button onclick="closeModal()">ابدأ الآن</button>
+    </div>
+</div>
+
+<style>
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        display: none;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-content h2 {
+        color: #00838f;
+        margin-bottom: 10px;
+    }
+
+    .modal-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .modal-content button {
+        background-color: #00838f;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .modal-content button:hover {
+        background-color: #00acc1;
+    }
+</style>
+
+<script>
+    // Show welcome modal when the page loads
+    window.addEventListener('load', () => {
+        const modal = document.getElementById('welcomeModal');
+        modal.style.display = 'flex';
+    });
+
+    // Close modal function
+    function closeModal() {
+        const modal = document.getElementById('welcomeModal');
+        modal.style.display = 'none';
+    }
+</script>
+
+    <style> 
+    
+        body { 
+          
+          
+        
+    background-image: url('converted_image.jpg'); /* اختر صورة الخلفية */
+    background-size: 100% 100%; /* تغطي الصورة كامل الشاشة */
+    background-position: center; /* محاذاة الصورة في المنتصف */
+    background-attachment: fixed; /* جعل الخلفية ثابتة عند التمرير */
+    margin: 0;
+    padding: 0;
+}
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #00acc1;
+            color: white;
+            font-size: 24px;
+            position: relative;
+            animation: slideInLogo 2s ease-in-out;
+        }
+        #logo {
+            width: 80px;
+            animation: slideInLogo 2s ease-in-out;
+        }
+        h1 {
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+            font-size: 28px;
+        }
+        @keyframes slideInLogo {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .menu {
+            position: relative;
+        }
+        .menu-button {
+            background-color: #00838f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .menu-options {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .menu-options a {
+            display: block;
+            padding: 10px 20px;
+            color: #004d40;
+            text-decoration: none;
+            background-color: #e0f7fa;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-options a:hover {
+            background-color: #b2ebf2;
+        }
+        .menu-button:hover + .menu-options,
+        .menu-options:hover {
+            display: block;
+        }
+        .about-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .about-section h1 {
+            color: #00acc1;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+         .about-section h2 {
+   color: #ffffff;
+   font-size: 28px;
+   margin-bottom: 20px;
+ }
+        .about-section p {
+            font-size: 20px;
+            color: #004d40;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .btn-server {
+            background-color: #00838f;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .btn-server:hover {
+            background-color: #00acc1;
+            transform: scale(1.05);
+        }
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .rank-button {
+            background-color: #00838f;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .rank-button:hover {
+            background-color: #00acc1;
+            transform: scale(1.05);
+        }
+        .rank-button span {
+            display: block;
+            font-weight: bold;
+            font-size: 22px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .message {
+            display: none;
+            font-size: 18px;
+            color: #004d40;
+            background-color: #ffffff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .message span {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        .rank-section {
+            display: none;
+        }
+        .designer-info {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 20px;
+            color: #00acc1;
+            font-weight: bold;
+        }
+        .designer-info a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .designer-info a:hover {
+            color: #00838f;
+        }
+        /* New styles for Instagram and Discord accounts */
+        .social-info {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+        .social-info a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+            margin: 1px 0;
+        }
+        .social-info a:hover {
+            color: #00acc1;
+        }
+        .social-info .emoji {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <img src="𝐍𝐞𝐰𝐒𝐭𝐚𝐭𝐞 𝐑𝐨𝐥𝐞𝐏𝐥𝐚𝐲 𝐬𝟐.png" id="logo" alt="Server Logo">
+        <h1>NEW STATE RP S2</h1>
+    </div>
+    <div class="menu">
+        <button class="menu-button" onclick="showAbout()">☰ Menu</button>
+        <div class="menu-options">
+            <a href="javascript:void(0)" onclick="showAbout()">الرئيسية</a>
+            <a href="javascript:void(0)" onclick="showRules()">القوانين</a>
+            <a href="javascript:void(0)" onclick="showServerCommands()">أوامر سيرفر</a>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<div id="aboutSection" class="about-section">
+    <h1>NEW STATEنبذة عن سيرفر   </h1>
+    <h2>
+        
+        يوفر هذا السيرفر بيئة مثالية للاعبين ليعيشوا في عالم افتراضي مليء بالمغامرات، حيث يمكن للاعبين التفاعل، بناء الشخصيات، والانخراط في مهام متنوعة مثل أن يصبحوا رجال أعمال، شرطيين، أو حتى عصابات.
+    </h2>
+    <h2>
+        تم تصميم هذا السيرفر ليجمع بين المتعة والتحديات، مع نظام رتب يتيح لكل لاعب التقدم والتطور. انضم الآن لتجربة رائعة ومثيرة.
+    </h2>
+    <br>
+    <div class="link">
+        <a href="https://discord.gg/r8HSbGRhAA" class="btn-server">انضم إلى السيرفر الآن</a>
+    </div>
+</div>
+<div class="footer-container">
+    <div class="designer-info">
+        <p>لطلب تصميم موقع👇</p>
+    </div>
+    <footer class="social-info">
+        <a href="https://www.instagram.com/gh_.os/" target="_blank">
+            <span class="emoji">
+                <img src="1322936199509311549.png" alt="إنستغرام" width="32" height="32">
+            </span>
+            @gh_.os - إنستغرام
+        </a>
+    </footer>
+</div>
+
+<style>
+    .footer-container {
+        position: fixed; /* تثبيت الحاوية في مكانها */
+        bottom: 20px; /* المسافة من أسفل الصفحة */
+        right: 20px; /* المسافة من يمين الصفحة */
+        text-align: right; /* محاذاة النص لليمين */
+    }
+
+    .designer-info {
+        background-color: #ffffff; /* خلفية بيضاء */
+        padding: 10px 20px; /* مسافة داخلية */
+        border-radius: 8px; /* زوايا مستديرة */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل */
+        font-size: 16px; /* حجم النص */
+        margin-bottom: 10px; /* مسافة بين العناصر */
+    }
+
+    .social-info {
+        background-color: #ffffff; /* خلفية بيضاء */
+        padding: 10px 20px; /* مسافة داخلية */
+        border-radius: 8px; /* زوايا مستديرة */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل */
+        font-size: 16px; /* حجم النص */
+    }
+
+    .social-info a {
+        text-decoration: none; /* إزالة الخط السفلي */
+        color: #00acc1; /* لون سماوي */
+        font-weight: bold; /* خط عريض */
+        transition: color 0.3s; /* تأثير انتقال على اللون */
+    }
+
+    .social-info a:hover {
+        color: #00838f; /* لون سماوي غامق عند التمرير */
+    }
+
+    .emoji img {
+        vertical-align: middle; /* محاذاة الصورة مع النص */
+        margin-right: 5px; /* مسافة بين الصورة والنص */
+    }
+</style>
+
+<!-- Rules Section -->
+<div id="rankSection" class="rank-section">
+    <div class="buttons-container">
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'قوانين الصحة: يجب الحفاظ على الصحة والنظافة العامة في المدينة.')"><span>🩺 قوانين الصحة</span></button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this,'  <ul> <h2>     <li>6.1- استمتع، كن مبدعاً ، وساهم بإجابية في مجتمع الرول بلاي</li><br><li>6.2- يجب عليك أتباع قوانين المدينة في جميع الأوقات</li><br><li>6.3- لا تقم باستغلال أي ثغرة قد تؤثر على اقتصاد المدينة ويجب عليك الابلاغ عنها فوراً</li><br><li>6.4- لا تقم بالتحرش أو الترصد للاعبين</li><br><li>6.5- استخدم ملابس الشخصية المناسبة والواقعية للبيئة التي تقوم باللعب فيها</li><br><li>6.6- لا تتطورط في السلوك البذيء (الجارح) أو الدراما المفرطة</li>  </h2>                                                                                                                  </ul> ' )"><span>🏙️ قوانين المدينة</span></button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'قوانين الشرطة: يجب على أفراد الشرطة الحفاظ على الأمن والنظام.')"><span>🚓 قوانين الشرطة</span></button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'ميكانيكي: مسؤول عن إصلاح المركبات والحفاظ على الطرق.')"><span>🔧 ميكانيكي</span></button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'عصابات: تنظيمات غير قانونية تتعامل في الأنشطة الجريمة.')"><span>💀 عصابات</span></button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'قوانين ديسكورد: يجب الالتزام بأداب الحوار واحترام الآخرين في سيرفر الديسكورد.')"><span>💬 قوانين ديسكورد</span></button>
+            <div class="message"></div>
+        </div>
+        <div>
+        
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Server Commands Section -->
+<div id="serverCommandsSection" class="rank-section">
+    <div class="buttons-container">
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'أوامر العصابات: تنظيمات غير قانونية.')">
+                <span>💀 أوامر العصابات</span>
+            </button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'أوامر الصحة: متابعة النظافة والصحة.')">
+                <span>🩺 أوامر الصحة</span>
+            </button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'أوامر الميكانيكي: مسؤول عن إصلاح المركبات.')">
+                <span>🔧  أوامر ميكانيكي</span>
+            </button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, 'أوامر الشرطة: حفظ النظام والأمن.')">
+                <span>🚓  أوامر الشرطة</span>
+            </button>
+            <div class="message"></div>
+        </div>
+        <div>
+            <button class="rank-button" onclick="showMessage(this, '<ul><h3> <li>+say; لي كتابة اعلان لسيرفر كامل</li><li>+setdis; لربط حساب ديسكورد </li><li>+info; لرؤية معلومات لاعب</li> <li>+prison; لحبس احد داخل  اللعبة </li> <li>+oprison; لحبس احد خارج اللعبة </li> <li>+release; لإخراج احد من السجن</li> <li>+revive; لإسعاف شخص </li> <li>+kick; لطرد شخص من سيرفر</li> <li>+unwh; لي الغاء تفعيل عن شخص</li> <li>+ban;  لتبنيد شخص داخل اللعبة</li> <li>+oban; لتبنيد شخص خارج اللعبة</li> <li>+unban; لفك الباند عن شخص </li> <li>+sendto; لإرسال شخص الى مكان </li> <li>+delete; لحذف حساب شخص معين</li> <li>+setveh; لوضع شحص داخل مركبة</li>                       </h3>                                                                                                                                                                             <ul>')">
+                <span>⚖️ أوامر الإدارة</span>
+            </button>
+            <div class="message"></div>
+        </div>
+    </div>
+
+<!-- Designer and Social Info Section -->
+
+<script>
+    function showMessage(button, text) {
+         // إخفاء جميع الرسائل الأخرى
+         const allMessages = document.querySelectorAll('.message');
+        allMessages.forEach(message => {
+            message.style.display = 'none';
+        });
+
+        const messageDiv = button.nextElementSibling;
+        messageDiv.innerHTML = text;
+        messageDiv.style.display = 'block';
+    }
+    function showAbout() {
+        document.getElementById('aboutSection').style.display = "block";
+        document.getElementById('rankSection').style.display = "none";
+        document.getElementById('serverCommandsSection').style.display = "none";
+    }
+    function showRules() {
+        document.getElementById('aboutSection').style.display = "none";
+        document.getElementById('rankSection').style.display = "block";
+        document.getElementById('serverCommandsSection').style.display = "none";
+    }
+    function showServerCommands() {
+        document.getElementById('aboutSection').style.display = "none";
+        document.getElementById('rankSection').style.display = "none";
+        document.getElementById('serverCommandsSection').style.display = "block";
+    }
+    
+</script>
+</body>
+</html>
+
