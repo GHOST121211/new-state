@@ -276,6 +276,28 @@
         .social-info .emoji {
             margin-right: 10px;
         }
+        /* أزرار الإجراءات */
+.action-button,
+.contact-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #b3ff00, #ffffff,#b3ff00 );
+    background-size: 200% 200%;
+    color: #000000;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: buttonAnimation 3s infinite alternate;
+}
+
+.action-button:hover,
+.contact-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
     </style>
 </head>
 <body>
@@ -312,8 +334,7 @@
         <pل</p>
     </div>
     <section id="contact" class="section">
-            <h2>للتواصل معنا وطلب خدمه</h2>
-            <p>يمكنك التواصل معنا عبر الروابط التالية:</p>
+
             <div class="contact-links">
         <a href="https://wa.me/911192917" target="_blank" class="contact-button">طلب تصميم موقع</a>
 </div>
